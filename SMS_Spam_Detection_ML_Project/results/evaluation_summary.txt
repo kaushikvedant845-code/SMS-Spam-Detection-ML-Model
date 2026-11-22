@@ -1,0 +1,20 @@
+SMS SPAM DETECTION - MODEL EVALUATION
+=============================================
+Rows: 5158 | Ham: 4516 | Spam: 642
+Train: 4126 | Test: 1032 (20% test split, random_state=42, stratified)
+
+Multinomial Naive Bayes
+  accuracy: 0.9554
+  spam_precision: 1.0000
+  spam_recall: 0.6406
+  spam_f1: 0.7810
+  confusion matrix (rows actual ham/spam, columns predicted ham/spam): [[904, 0], [46, 82]]
+
+Logistic Regression
+  accuracy: 0.9525
+  spam_precision: 0.9877
+  spam_recall: 0.6250
+  spam_f1: 0.7656
+  confusion matrix (rows actual ham/spam, columns predicted ham/spam): [[903, 1], [48, 80]]
+
+Best model selected by Spam F1: Multinomial Naive Bayes

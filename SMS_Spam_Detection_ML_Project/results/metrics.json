@@ -1,0 +1,107 @@
+{
+  "dataset": {
+    "total_rows_after_cleaning": 5158,
+    "ham": 4516,
+    "spam": 642,
+    "train_rows": 4126,
+    "test_rows": 1032
+  },
+  "models": {
+    "Multinomial Naive Bayes": {
+      "accuracy": 0.9554263565891473,
+      "spam_precision": 1.0,
+      "spam_recall": 0.640625,
+      "spam_f1": 0.780952380952381,
+      "confusion_matrix_labels": [
+        "ham",
+        "spam"
+      ],
+      "confusion_matrix": [
+        [
+          904,
+          0
+        ],
+        [
+          46,
+          82
+        ]
+      ],
+      "classification_report": {
+        "ham": {
+          "precision": 0.9515789473684211,
+          "recall": 1.0,
+          "f1-score": 0.9751887810140237,
+          "support": 904.0
+        },
+        "spam": {
+          "precision": 1.0,
+          "recall": 0.640625,
+          "f1-score": 0.780952380952381,
+          "support": 128.0
+        },
+        "accuracy": 0.9554263565891473,
+        "macro avg": {
+          "precision": 0.9757894736842105,
+          "recall": 0.8203125,
+          "f1-score": 0.8780705809832023,
+          "support": 1032.0
+        },
+        "weighted avg": {
+          "precision": 0.9575846593227255,
+          "recall": 0.9554263565891473,
+          "f1-score": 0.9510974445722695,
+          "support": 1032.0
+        }
+      }
+    },
+    "Logistic Regression": {
+      "accuracy": 0.9525193798449613,
+      "spam_precision": 0.9876543209876543,
+      "spam_recall": 0.625,
+      "spam_f1": 0.7655502392344498,
+      "confusion_matrix_labels": [
+        "ham",
+        "spam"
+      ],
+      "confusion_matrix": [
+        [
+          903,
+          1
+        ],
+        [
+          48,
+          80
+        ]
+      ],
+      "classification_report": {
+        "ham": {
+          "precision": 0.9495268138801262,
+          "recall": 0.9988938053097345,
+          "f1-score": 0.9735849056603774,
+          "support": 904.0
+        },
+        "spam": {
+          "precision": 0.9876543209876543,
+          "recall": 0.625,
+          "f1-score": 0.7655502392344498,
+          "support": 128.0
+        },
+        "accuracy": 0.9525193798449613,
+        "macro avg": {
+          "precision": 0.9685905674338902,
+          "recall": 0.8119469026548672,
+          "f1-score": 0.8695675724474136,
+          "support": 1032.0
+        },
+        "weighted avg": {
+          "precision": 0.954255807009742,
+          "recall": 0.9525193798449613,
+          "f1-score": 0.9477821563362313,
+          "support": 1032.0
+        }
+      }
+    }
+  },
+  "best_model": "Multinomial Naive Bayes",
+  "model_file": "models/best_sms_spam_model.joblib"
+}
